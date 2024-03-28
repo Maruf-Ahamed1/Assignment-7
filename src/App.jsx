@@ -82,9 +82,9 @@ const handleDeleted = (id) =>{
               <h2 className="card-title flex items-center justify-center pb-2">Want to Cook : {cart.length} </h2>
             </div>
 
-            <div className="w-full justify-around text-orange-300 ">
-              <div className="overflow-x-auto text-orange-300">
-                <table className="justify-around text-cyan-600  lg:w-96 w-72 text-xl">
+            <div className="w-full justify-around text-orange-300 mx-auto">
+              <div className="overflow-x-auto text-orange-300 mx-auto">
+                <table className="justify-around text-cyan-600  lg:w-96 mx-auto text-xl">
                   {/* head */}
                   <div className='lg:w-96  justify-around flex'>
                     <thead>
@@ -108,7 +108,7 @@ const handleDeleted = (id) =>{
                   <div className="">
                     {
                       cart.map((item,index ) => (
-                        <div className="cart-info flex justify-around lg:w-96 w-80 my-5 bg-gray-300 h-16 items-center mx-auto"  key={item.recipe_id}>
+                        <div className="cart-info flex justify-around lg:w-96  my-5 bg-gray-300 h-16 items-center mx-auto"  key={item.recipe_id}>
                           <p>{index+1}</p>
                           <h1>{item.recipe_name}</h1>
                           <p>{item.preparing_time} </p>
